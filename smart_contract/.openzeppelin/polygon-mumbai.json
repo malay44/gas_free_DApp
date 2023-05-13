@@ -1,0 +1,79 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xe61E7FCE5A963938598f6e356a9F5207f9096fdc",
+    "txHash": "0xa76f85be24fea601bd240002a9dd03a4d3c0101479dbf519c94288b00bf6b6f1"
+  },
+  "proxies": [
+    {
+      "address": "0x3253753f5DbF6f8C638dcEb465702C19131299c3",
+      "txHash": "0x906419314a4f4b0874ff3fc059f0cc7f889b9d7ec9ca5394ad3ddd9f2e145d80",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xf0a6eB41b210B9103aBcC6Cc1A24b9D67E3427e0",
+      "txHash": "0x2469863ad536af3212fce0e348924ac16007175e120b6b464ec5b0113f568e95",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f": {
+      "address": "0x4BE30F20D4AbDc8CC0aF33715515338A6460319E",
+      "txHash": "0xadc72004f4110dc118114126f1af24a179a8c18a23b1767061820b6fc22c506a",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "4870ec79d7745b980141316bba6faff6671ae9830e73c04f8fe37ebd97750049": {
+      "address": "0xccf5dFD025E120A9E6B47012a3b2a131a5B9401c",
+      "txHash": "0xee5ef96d31c1ceae2004a0663ad8df75ce3e17241900481cc00e5e76ef842234",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:6"
+          },
+          {
+            "label": "_trustedForwarder",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "ERC2771Recipient",
+            "src": "@opengsn/contracts/src/ERC2771Recipient.sol:21"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
